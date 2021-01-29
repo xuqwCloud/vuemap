@@ -1,32 +1,15 @@
 <template>
-    <div id="app"></div>
+    <div id="app">
+        <map-view></map-view>
+    </div>
 </template>
 
 <script>
-import Map from '@arcgis/core/Map';
-import MapView from '@arcgis/core/views/MapView';
+import MapView from './components/MapView.vue';
 
 export default {
     name: 'App',
-    components: {},
-    mounted() {
-        this.handleCreateMap();
-    },
-    methods: {
-        handleCreateMap() {
-            const map = new Map({
-                basemap: 'osm',
-            });
-
-            const view = new MapView({
-                container: 'app',
-                map: map,
-                zoom: 10,
-            });
-
-            console.log(view);
-        },
-    },
+    components: { MapView },
 };
 </script>
 
