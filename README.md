@@ -7,6 +7,15 @@
 
 -----
 
+## 使用方法
+
+```
+npm install
+npm run serve
+```
+
+-----
+
 ## 当前技术栈
 
 * 前端：Vue + Vuex + Vue Router + ArcGIS API for JavaScript 4.18
