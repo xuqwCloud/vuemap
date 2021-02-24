@@ -37,7 +37,9 @@ export default {
                 center: [104.09028, 30.577999],
             });
 
-            console.log(view);
+            this.$store.commit('setView', view);
+
+            console.log(this.$store.getters.getView);
         },
     },
 };
