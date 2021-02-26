@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <map-view></map-view>
+        <map-view view-type="2d"></map-view>
     </div>
 </template>
 
